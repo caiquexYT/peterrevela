@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda como faturar com vídeos automatizados usando IA. Sem aparecer, sem gravar, sem tecnologia complexa. Método Fábrica Viral.">
+    <meta name="theme-color" content="#050709">
+    <meta property="og:title" content="Método Fábrica Viral | Fature com Vídeos de IA">
+    <meta property="og:description" content="Crie vídeos virais com IA e comece a ganhar em até 15 dias. Sem aparecer, sem gravar.">
+    
+    <title>Método Fábrica Viral | Fature com Vídeos de IA</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+        <canvas id="hero-particles"></canvas>
+        <div class="container">
+            <h1 class="hero__headline" data-animate="fade-up">
+                Como eu faturei <span class="headline-value" data-hero-number="89952.26">R$89.952,26</span> em 4 meses
+                <br>postando vídeos com IA
+            </h1>
+            
+            <p class="hero__subheadline" data-animate="fade-up">
+                Aprenda a criar vídeos virais com IA — sem aparecer, sem gravar, sem precisar saber nada de tecnologia. Resultado médio: 15 dias.
+            </p>
+
+            <!-- Metrics Bar -->
+            <div class="metrics-bar" id="metrics-bar" data-animate="fade-up">
+                <!-- Rendered by components.js -->
+            </div>
+
+            <!-- VSL Player -->
+            <div class="vsl-wrapper" id="vsl" data-animate="fade-in">
+                <div class="vsl-player" id="vsl-player">
+                    <video
+                        id="vsl-video"
+                        class="vsl-video"
+                        src="https://video.wixstatic.com/video/db7a98_a5de17de5f294ff8975cdd7247cfdd73/1080p/mp4/file.mp4"
+                        preload="metadata"
+                        playsinline
+                        webkit-playsinline
+                    ></video>
+
+                    <!-- Overlay inicial (some ao dar play) -->
+                    <div class="vsl-overlay" id="vsl-overlay">
+                        <button class="vsl-play-btn" id="vsl-play-btn" aria-label="Assistir ao vídeo">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                <path d="M8 5.14v14l11-7-11-7z" fill="#00ff80"/>
+                            </svg>
+                        </button>
+                        <span class="vsl-overlay-text">Clique para assistir — 8 min</span>
+                    </div>
+
+                    <!-- Barra de progresso customizada -->
+                    <div class="vsl-progress-wrap" id="vsl-progress-wrap">
+                        <div class="vsl-progress-bg">
+                            <div class="vsl-progress-fill" id="vsl-progress-fill"></div>
+                        </div>
+                        <div class="vsl-controls-row">
+                            <button class="vsl-ctrl" id="vsl-toggle" aria-label="Play/Pause">
+                                <span id="vsl-toggle-icon">▶</span>
+                            </button>
+                            <span class="vsl-time-display" id="vsl-time-display">0:00 / 0:00</span>
+                            <div class="vsl-right-controls">
+                                <button class="vsl-ctrl" id="vsl-mute" aria-label="Mudo">🔊</button>
+                                <button class="vsl-ctrl" id="vsl-fs" aria-label="Tela cheia">⛶</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="vsl-caption">
+                ⚠️ Assista ao vídeo completo — ele explica exatamente como funciona o método
+            </p>
+
+            <!-- CTA Hero -->
+            <div class="text-center" data-animate="fade-up">
+                <a href="https://pay.cakto.com.br/3bafz2u?affiliate=95dz9FKL" class="btn btn--primary btn--xl" target="_blank" rel="noopener noreferrer" data-cta="hero">
+                    QUERO APRENDER O MÉTODO AGORA →
+                </a>
+                <p class="cta-microcopy">
+                    🔒 Pagamento seguro · ✅ Garantia 30 dias · ⚡ Acesso em até 5 minutos
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Section -->
+    <section class="section section--raised" id="dor">
+        <div class="container">
+            <h2 class="text-center" data-animate="fade-up" style="margin-bottom: 48px;">
+                Você se identifica com alguma dessas situações?
+            </h2>
+            
+            <div class="stagger-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                <div class="card" data-animate="fade-up" data-stagger="0">
+                    <div class="card__icon">❌</div>
+                    <p class="card__text">Trabalha muito e o salário não evolui</p>
+                </div>
+                <div class="card" data-animate="fade-up" data-stagger="1">
+                    <div class="card__icon">❌</div>
+                    <p class="card__text">Quer renda extra mas não tem tempo pra estudar</p>
+                </div>
+                <div class="card" data-animate="fade-up" data-stagger="2">
+                    <div class="card__icon">❌</div>
+                    <p class="card__text">Tem medo de aparecer na câmera</p>
+                </div>
+                <div class="card" data-animate="fade-up" data-stagger="3">
+                    <div class="card__icon">❌</div>
+                    <p class="card__text">Tentou outros métodos e não funcionou</p>
+                </div>
+                <div class="card" data-animate="fade-up" data-stagger="4">
+                    <div class="card__icon">❌</div>
+                    <p class="card__text">Não entende de tecnologia</p>
+                </div>
+                <div class="card" data-animate="fade-up" data-stagger="5">
+                    <div class="card__icon">❌</div>
+                    <p class="card__text">Quer liberdade mas não sabe por onde começar</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 60px;">
+                <p class="hero__subheadline" data-animate="fade-up">
+                    Se você marcou qualquer um desses pontos, o <strong>Método Fábrica Viral</strong> foi criado para você.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="como-funciona">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 80px;">
+                <h2 data-animate="fade-up">Como o Método Fábrica Viral funciona?</h2>
+                <p class="hero__subheadline" data-animate="fade-up" style="margin-top: 16px;">
+                    3 passos. Sem complicação. Sem precisar aparecer.
+                </p>
+            </div>
+
+            <div class="stagger-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px;">
+                <div class="card" data-animate="fade-up" data-stagger="0">
+                    <div class="card__icon">🎯</div>
+                    <h3 class="card__title">Escolha o nicho</h3>
+                    <p class="card__text">Em menos de 10 minutos você define seu nicho com a ajuda de IA. Zero pesquisa manual.</p>
+                </div>
+                <div class="card" data-animate="fade-up" data-stagger="1">
+                    <div class="card__icon">🤖</div>
+                    <h3 class="card__title">A IA cria tudo</h3>
+                    <p class="card__text">Script, narração, personagem e edição — tudo gerado automaticamente. Você só revisa.</p>
+                </div>
+                <div class="card" data-animate="fade-up" data-stagger="2">
+                    <div class="card__icon">💰</div>
+                    <h3 class="card__title">Publica e monetiza</h3>
+                    <p class="card__text">Com o vídeo pronto, você publica e ativa a monetização. Em média: 15 dias pro primeiro ganho.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 80px;">
+                <a href="https://pay.cakto.com.br/3bafz2u?affiliate=95dz9FKL" class="btn btn--primary btn--xl" target="_blank" rel="noopener noreferrer" data-cta="how-it-works">
+                    Quero começar agora →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section--raised" id="depoimentos">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h2 data-animate="fade-up">O que nossos alunos estão falando</h2>
+                <p class="hero__subheadline" data-animate="fade-up" style="margin-top: 16px;">
+                    Resultados reais de pessoas reais — sem filtro
+                </p>
+            </div>
+
+            <div class="testimonials-grid" id="testimonials-grid">
+                <!-- Rendered by components.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="section" id="garantia">
+        <div class="container container--narrow">
+            <div class="card card--featured text-center" data-animate="fade-up">
+                <div style="font-size: 4rem; margin-bottom: 24px;">🛡️</div>
+                <div class="guarantee-content">
+                    <div style="display: inline-block; background: var(--neon-subtle); border: 1px solid var(--neon-border); padding: 6px 14px; border-radius: var(--radius-full); font-size: var(--text-xs); color: var(--neon-primary); font-weight: 600; margin-bottom: 16px;">
+                        Garantia Incondicional
+                    </div>
+                    <h3 class="card__title" style="font-size: var(--text-3xl); margin-bottom: 20px;">
+                        30 dias para testar.<br>Se não gostar, devolvemos tudo.
+                    </h3>
+                    <p class="card__text" style="margin-bottom: 20px; font-size: var(--text-lg);">
+                        Acesse o método completo. Aplique. Se em 30 dias você não estiver satisfeito — por qualquer motivo — basta enviar um e-mail e devolvemos 100% do seu investimento. Sem perguntas. Sem burocracia. Sem discussão.
+                    </p>
+                    <p class="card__text" style="font-size: var(--text-lg); color: var(--text-high);">
+                        O risco é <strong>100% nosso</strong>. Você só tem a ganhar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section class="section section--raised" id="oferta">
+        <div class="container container--narrow">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <div style="display: inline-block; background: var(--neon-subtle); border: 1px solid var(--neon-border); padding: 6px 14px; border-radius: var(--radius-full); font-size: var(--text-xs); color: var(--neon-primary); font-weight: 600; margin-bottom: 20px;">
+                    Oferta Especial
+                </div>
+                <h2 data-animate="fade-up">
+                    Tudo que você recebe no<br>
+                    <span class="text-neon">Método Fábrica Viral</span>
+                </h2>
+            </div>
+
+            <div class="card card--featured offer-stack" data-animate="fade-in">
+                <div class="offer-modules" id="modules-list">
+                    <!-- Rendered by components.js -->
+                </div>
+
+                <div class="offer-divider"></div>
+
+                <div class="offer-drama">
+                    Mas você <strong>não vai pagar R$1.229</strong>.<br>
+                    Nem R$688. Nem R$197. Nem R$97.
+                </div>
+
+                <div class="offer-price-block">
+                    <span class="offer-price-label">Hoje por apenas</span>
+                    <div class="offer-price-main">
+                        <span class="offer-price-currency">R$</span>
+                        <span class="offer-price-value">47</span>
+                        <span class="offer-price-cents">,70</span>
+                    </div>
+                    <span class="offer-price-sub">Pagamento único · Acesso vitalício</span>
+                </div>
+
+                <div style="text-align: center; margin: 32px 0;">
+                    <a href="https://pay.cakto.com.br/3bafz2u?affiliate=95dz9FKL" class="btn btn--primary btn--xl" target="_blank" rel="noopener noreferrer" data-cta="offer">
+                        SIM! QUERO TUDO ISSO POR R$47,70 →
+                    </a>
+                </div>
+
+                <div class="offer-trust">
+                    <span>🔒 Pagamento 100% seguro</span>
+                    <span>✅ Garantia de 30 dias</span>
+                    <span>⚡ Acesso imediato</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+        <div class="container container--narrow">
+            <h2 class="text-center" data-animate="fade-up" style="margin-bottom: 60px;">
+                Perguntas Frequentes
+            </h2>
+
+            <div class="faq-container" data-animate="fade-up">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Preciso aparecer nos vídeos?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não! O método é focado 100% em canais dark, onde você usa avatares e vozes geradas por IA. Ninguém saberá quem é o dono do canal.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Quanto tempo preciso dedicar por dia?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Com a automação da IA, você consegue criar e postar um vídeo completo em menos de 30 minutos por dia.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Funciona para quem é iniciante?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! O curso foi desenhado do zero, passo a passo, para quem nunca editou um vídeo ou criou um canal no YouTube.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Preciso de um computador potente?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não. Todas as ferramentas de IA que usamos rodam direto no navegador (nuvem), então você pode usar até um celular básico.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Em quanto tempo terei resultados?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A maioria dos nossos alunos começa a ver os primeiros ganhos de monetização ou vendas entre 15 a 21 dias após iniciar as postagens.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        O acesso é vitalício?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Uma vez que você garante sua vaga, o acesso ao curso e a todas as atualizações futuras é seu para sempre.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Como recebo o acesso?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Imediatamente após a confirmação do pagamento, você receberá um e-mail com seus dados de login para a nossa plataforma exclusiva.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        E se eu tiver dúvidas?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Você terá acesso ao nosso suporte prioritário por 90 dias e à nossa comunidade exclusiva de alunos para trocar experiências.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 80px;">
+                <a href="https://pay.cakto.com.br/3bafz2u?affiliate=95dz9FKL" class="btn btn--primary btn--xl" target="_blank" rel="noopener noreferrer" data-cta="faq">
+                    GARANTIR MINHA VAGA AGORA →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Urgency Section -->
+    <section class="section section--dark text-center" id="urgencia">
+        <div class="container">
+            <h2 data-animate="fade-up" style="margin-bottom: 24px;">
+                Esse preço só existe por tempo limitado.
+            </h2>
+            <p class="hero__subheadline" data-animate="fade-up">
+                Quando o timer zerar, a promoção fecha.
+            </p>
+
+            <div class="timer-display" id="timer-display" data-animate="fade-in" style="margin: 60px 0;">
+                <!-- Rendered by main.js -->
+            </div>
+
+            <a href="https://pay.cakto.com.br/3bafz2u?affiliate=95dz9FKL" class="btn btn--primary btn--xl" target="_blank" rel="noopener noreferrer" data-cta="urgency">
+                GARANTIR MINHA VAGA AGORA →
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section--dark">
+        <div class="container text-center">
+            <p style="margin-bottom: 16px; font-weight: 600;">
+                © 2025 Método Fábrica Viral. Todos os direitos reservados.
+            </p>
+            <p style="font-size: var(--text-xs); margin-bottom: 12px;">
+                Este produto não constitui promessa de renda. Os resultados apresentados são de alunos que seguiram o método de forma consistente e podem variar conforme dedicação individual.
+            </p>
+            <p style="font-size: var(--text-xs);">
+                Produto digital distribuído via Cakto. | <a href="#" style="color: var(--text-low);">Política de Privacidade</a> · <a href="#" style="color: var(--text-low);">Termos de Uso</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="sticky-cta">
+        <div class="sticky-cta__inner">
+            <div class="sticky-cta__text">
+                <div class="sticky-cta__title">Aproveite a oferta!</div>
+                <div class="sticky-cta__price">De <del>R$1.229</del> por apenas <strong>R$47,70</strong></div>
+            </div>
+            <a href="https://pay.cakto.com.br/3bafz2u?affiliate=95dz9FKL" class="btn btn--primary" target="_blank" rel="noopener noreferrer" data-cta="sticky">
+                QUERO O MÉTODO →
+            </a>
+            <button class="sticky-cta__close" id="sticky-close">×</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="utils.js" defer></script>
+    <script src="animations.js" defer></script>
+    <script src="components.js" defer></script>
+    <script src="main.js" defer></script>
+</body>
+</html>
